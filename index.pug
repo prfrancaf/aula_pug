@@ -1,0 +1,39 @@
+extends layout
+mixin itemLista(titulo, paragrafo)
+    li.panel.panel-default
+        h3= titulo
+        p= paragrafo
+
+block main
+    h2.jumbotron título do conteudo
+    button.btn.btn-primary(data-toggle="modal" data-target="#myModal") clique para abrir o modal
+
+    div(class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+        div(class="modal-dialog" role="document")
+            div(class="modal-content")
+            div(class="modal-header")
+                button(type="button" class="close" data-dismiss="modal" aria-label="Close") 
+                    span(aria-hidden="true") &times;
+                h4(class="modal-title" id="myModalLabel") Modal title
+            
+            div(class="modal-body")
+                form.form(action="")
+                    input.input(type="text")
+            
+            div(class="modal-footer")
+                button(type="button" class="btn btn-default" data-dismiss="modal") Close
+                button(type="button" class="btn btn-primary") Save changes
+            
+            
+  
+
+    
+    
+    section#teste
+        ul.nav.container-fluid
+            +itemLista("título do item","lorem lçaksj dçlfkj asçldkjf çalskdjf çlaksdj fçlaksjd çlkjsaf çladskjf")
+            +itemLista("título do item","lorem lçaksj dçlfkj asçldkjf çalskdjf çlaksdj fçlaksjd çlkjsaf çladskjf")
+            +itemLista("título do item","lorem lçaksj dçlfkj asçldkjf çalskdjf çlaksdj fçlaksjd çlkjsaf çladskjf")
+            +itemLista("título do item","lorem lçaksj dçlfkj asçldkjf çalskdjf çlaksdj fçlaksjd çlkjsaf çladskjf")
+            +itemLista("título do item","lorem lçaksj dçlfkj asçldkjf çalskdjf çlaksdj fçlaksjd çlkjsaf çladskjf")
+            +itemLista("título do item","lorem lçaksj dçlfkj asçldkjf çalskdjf çlaksdj fçlaksjd çlkjsaf çladskjf")
